@@ -2,9 +2,10 @@ import random
 import telebot
 import parser
 from telebot import types
+import os
 
-TOKEN = "811240287:AAFZNFNeGE9fy8U39wnBfSmiWLpQYjkBp7U"
-bot = telebot.TeleBot(TOKEN)
+token = "os.getenv("TOKEN")"
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start', 'go'])
 def start_handler(message):
